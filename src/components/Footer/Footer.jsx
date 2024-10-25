@@ -15,7 +15,7 @@ export default function Footer() {
                     </div>
                     <div className="bg-white rounded-md overflow-hidden">
                         <input type="text" placeholder="Enter Your Email To Subscribe" className="pl-4 pr-10 py-3 outline-none border-0" />
-                        <button className="uppercase text-white py-3 px-3 bg-mainBlack">Subscribe</button>
+                        <button className="uppercase text-white py-3 px-3 bg-mainBlack max-md:w-full">Subscribe</button>
                     </div>
                 </div>
             </div>
