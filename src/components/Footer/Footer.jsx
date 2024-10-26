@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faLinkedinIn, faTwitter} from '@fortawesome/free-brands-svg-icons';
 import { faLocationDot, faMobileScreen, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import facebook from "../../assets/icons/facebook.svg";
+import instagram from "../../assets/icons/instagram.svg";
+import twitter from "../../assets/icons/twitter.svg";
+import linkedin from "../../assets/icons/linkedin.svg";
 
 export default function Footer() {
 
     return (
         <>
-            <div className="bg-mainColor mt-96">
-                <div className="container mx-auto max-sm:px-4 py-8 flex items-center justify-between max-md:flex-col max-md:gap-12 max-md:py-12 max-md:text-center">
+            <div className="bg-mainColor mt-96 px-3">
+                <div className="container max-w-[1200px] mx-auto max-sm:px-4 py-8 flex items-center justify-between max-md:flex-col max-md:gap-12 max-md:py-12 max-md:text-center">
                     <div className="text-white">
                         <p className="capitalize text-4xl">Join our newsletter now</p>
                         <p className="max-md:mt-6">Register now to get updates on promotions...</p>
@@ -19,8 +23,8 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <footer className="text-white bg-mainBlack">
-                <div className="container max-sm:px-4 mx-auto py-6">
+            <footer className="text-white bg-mainBlack px-3">
+                <div className="container max-w-[1200px] max-sm:px-4 mx-auto py-6">
                     <div className="grid gap-4 max-sm:grid-cols-1 max-lg:grid-cols-2 grid-cols-4 max-sm:text-center">
                         <div>
                             <h2 className="text-xl my-6">Your Logo</h2>
@@ -30,10 +34,10 @@ export default function Footer() {
                                 dummy text of the printing.
                             </p>
                             <div className="flex items-center mt-6 max-sm:justify-center">
-                                <div className="rounded-full mr-2 bg-mainColor px-3 py-1"><FontAwesomeIcon icon={faFacebookF} /></div>
-                                <div className="rounded-full mx-2 bg-mainColor px-3 py-1"><FontAwesomeIcon icon={faInstagram} /></div>
-                                <div className="rounded-full mx-2 bg-mainColor px-3 py-1"><FontAwesomeIcon icon={faLinkedinIn} /></div>
-                                <div className="rounded-full mx-2 bg-mainColor px-3 py-1"><FontAwesomeIcon icon={faTwitter} /></div>
+                                <div className="rounded-full mr-2 bg-mainColor hover:bg-blue-600 transition p-2"><img src={facebook} alt="Facebook" /></div>
+                                <div className="rounded-full mr-2 bg-mainColor hover:bg-blue-600 transition p-2"><img src={instagram} alt="Instagram" /></div>
+                                <div className="rounded-full mr-2 bg-mainColor hover:bg-blue-600 transition p-2"><img src={twitter} alt="Twitter" /></div>
+                                <div className="rounded-full mr-2 bg-mainColor hover:bg-blue-600 transition p-2"><img src={linkedin} alt="Linked In" /></div>
                             </div>
                         </div>
                         <div className="max-md:ml-0 ml-12">

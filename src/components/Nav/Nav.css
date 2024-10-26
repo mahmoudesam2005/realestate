@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .sub-ul::before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        border: 10px solid blue;
+        border-color: transparent #c3e5ff transparent transparent;
+        top: 0;
+        left: -20px;
+    }
+}
